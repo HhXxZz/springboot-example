@@ -17,8 +17,8 @@
 	<select id="getUserInfoById" resultMap="BaseResultMap" parameterType="java.lang.String">
 		select
 		<include refid="Base_Column_List" />
-		from user
-		where userid = #{userid}
+		from user where userid = #{userid}
 	</select>
+	
 
 </mapper>

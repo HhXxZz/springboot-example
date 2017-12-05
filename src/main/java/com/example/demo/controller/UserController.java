@@ -16,7 +16,8 @@ public class UserController {
 	
 	@RequestMapping(value="/user",method=RequestMethod.GET)
 	public User getUserInfo(@RequestParam(value="userid",required = true)String userid){
-		return userService.getUserInfoById(userid);
+		User user = userService.getUserInfoById(userid);
+		return user;
 	}
 	
 }
