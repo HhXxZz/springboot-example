@@ -4,4 +4,7 @@ import com.example.demo.bean.User;
 
 public interface UserService {
 	User getUserInfoById(String userid);
+	
+	boolean addUser(User user);
+	
 }

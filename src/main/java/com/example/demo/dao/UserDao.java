@@ -6,5 +6,7 @@ import com.example.demo.bean.User;
 
 public interface UserDao {
 	User getUserInfoById(@Param("userid")String userid);
+	
+	boolean addUser(User user);
 }
  

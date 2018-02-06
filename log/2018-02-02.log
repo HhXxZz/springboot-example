@@ -1,0 +1,45 @@
+16:10:04.386 [main] INFO  com.example.demo.Application - Starting Application on HXZ-PC with PID 10608 (E:\javaWorkspace\springboot-example\target\classes started by 黄潇振 in E:\javaWorkspace\springboot-example)
+16:10:04.388 [main] INFO  com.example.demo.Application - No active profile set, falling back to default profiles: default
+16:10:04.442 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70be0a2b: startup date [Fri Feb 02 16:10:04 CST 2018]; root of context hierarchy
+16:10:04.709 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+16:10:05.178 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+16:10:06.313 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+16:10:06.330 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+16:10:06.332 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+16:10:06.439 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:10:06.439 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1998 ms
+16:10:06.657 [localhost-startStop-1] INFO  o.s.b.w.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+16:10:06.662 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+16:10:06.662 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16:10:06.663 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16:10:06.663 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+16:10:08.022 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70be0a2b: startup date [Fri Feb 02 16:10:04 CST 2018]; root of context hierarchy
+16:10:08.122 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/common/peerid],methods=[GET]}" onto public com.example.demo.bean.Result com.example.demo.controller.common.Common.getPeerid(java.lang.String)
+16:10:08.123 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/register],methods=[POST]}" onto public com.example.demo.bean.Result com.example.demo.controller.user.UserController.register(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer)
+16:10:08.124 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user],methods=[GET]}" onto public com.example.demo.bean.User com.example.demo.controller.user.UserController.getUserInfo(java.lang.String)
+16:10:08.124 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/test/user],methods=[GET]}" onto public java.lang.String com.example.demo.controller.user.UserController.getUserInfo2()
+16:10:08.127 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+16:10:08.127 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16:10:08.195 [main] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:10:08.196 [main] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:10:08.225 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionHandle
+16:10:08.264 [main] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:10:08.816 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+16:10:08.838 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:10:08.852 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:10:08.870 [main] INFO  o.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:10:08.896 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+16:10:08.901 [main] INFO  com.example.demo.Application - Started Application in 4.759 seconds (JVM running for 5.261)
+16:10:16.235 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:10:16.235 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+16:10:16.265 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+16:10:16.300 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.WebLogAspect - URL : http://localhost:8080/test/user
+16:10:16.300 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.WebLogAspect - HTTP_METHOD : GET
+16:10:16.301 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.WebLogAspect - IP : 0:0:0:0:0:0:0:1
+16:10:16.303 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.WebLogAspect - CLASS_METHOD : com.example.demo.controller.user.UserController.getUserInfo2
+16:10:16.303 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.WebLogAspect - ARGS : []
+16:10:16.311 [http-nio-8080-exec-3] INFO  c.e.demo.controller.user.UserController - logback 访问hello
+16:10:16.311 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.WebLogAspect - ----doAfter-----------
+16:10:16.311 [http-nio-8080-exec-3] INFO  com.example.demo.aspect.WebLogAspect - response=hello world
+16:10:51.762 [http-nio-8080-exec-2] ERROR com.example.demo.aspect.OathInterceptor - {"code":-4,"data":"","msg":"PEERID_ERROR"}
+16:10:51.762 [http-nio-8080-exec-2] INFO  com.example.demo.aspect.OathInterceptor - {"code":-4,"data":"","msg":"PEERID_ERROR"}

@@ -3,7 +3,8 @@
 <mapper namespace="com.example.demo.dao.UserDao">
 	<resultMap id="BaseResultMap" type="com.example.demo.bean.User">
 		<result column="userid" property="userid" />
-		<result column="name" property="name" />
+		<result column="username" property="username" />
+		<result column="password" property="password" />
 		<result column="sex" property="sex" />
 		<result column="age" property="age" />
 	</resultMap>
@@ -11,7 +12,7 @@
 	<parameterMap id="User" type="com.example.demo.bean.User"/>
 
 	<sql id="Base_Column_List">
-		userid,name,sex,age
+		userid,username,password,sex,age
 	</sql>
 
 	<select id="getUserInfoById" resultMap="BaseResultMap" parameterType="java.lang.String">
@@ -20,5 +21,9 @@
 		from user where userid = #{userid}
 	</select>
 	
+	<insert id="addUser" parameterMap="User" keyProperty="userid">
+		 insert into user(<include refid="Base_Column_List" />)
+         values(#{userid},#{username},#{password},#{sex},#{age})
+	</insert>
 
 </mapper>
